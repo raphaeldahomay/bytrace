@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f4;
+    color: #111;
+}
+
+.navbar {
+    height: 68px;
+    background-color: #c9ffad;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    position: relative;
+}
+
+.logo {
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-container {
+    width: 385px; /* same width as converter-box */
+    margin: 0 auto;
+}
+
+nav a {
+    color: #000;
+    margin: 0 53px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #000;
+    font-weight: 700;
+}
+
+.container {
+    min-height: calc(100vh - 118px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.hero-logo {
+    font-size: 76px;
+    color: #5f7048;
+    margin: 0 0 55px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.converter-box {
+    width: 385px;
+}
+
+.select-box,
+label,
+.output-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #c9c5c5;
+    border: 1px solid #000;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+
+label,
+.output-label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 28px;
+    margin-top: 14px;
+    border: 1px solid #000;
+    background-color: #f8f4f4;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 36px;
+    margin: 16px 0 22px;
+}
+
+.output {
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+footer {
+    height: 50px;
+    background-color: #c9ffad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.page-content {
+    min-height: calc(100vh - 118px);
+    padding: 70px 22%;
+    background-color: #f8f4f4;
+}
+
+.page-content h1 {
+    text-align: center;
+    color: #5f7048;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.engine-section {
+    margin-bottom: 34px;
+}
+
+.engine-section h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.engine-section p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.engine-flow {
+    margin-top: 55px;
+    padding: 22px;
+    border: 1px solid #000;
+    background-color: #c9c5c5;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+select.select-box {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.input-row input {
+    margin-top: 0;
+    flex: 1;
+}
+
+.input-row button {
+    border: 1px solid #000;
+    background-color: #c9ffad;
+    padding: 0 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-box {
+    max-width: 750px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 30px;
+}
