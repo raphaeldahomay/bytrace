@@ -5,5 +5,6 @@ version = "0.1.0"
 dependencies = [
     "flask",
     "python-dotenv",
-    "psycopg2-binary"
+    "psycopg2-binary",
+    "gunicorn"
 ]
