@@ -14,32 +14,12 @@ def home_page():
 
         output = convert(user_input, converter_type)
 
-        save_event(
-            event_type="conversion",
-            converter_type=converter_type,
-            input_value=user_input,
-            output_value=output,
-            clicked_element='convertButton',
-            status="success",
-            user_ip=request.remote_addr,
-            user_agent=request.headers.get("User-Agent")
-        )
-
     return render_template("index.html", output=output)
 
 
 @app.route("/track-event", methods=["POST"])
 def track_event():
     data = request.get_json()
-
-    save_event(
-        event_type=data.get("event_type"),
-        clicked_element=data.get("clicked_element"),
-        previous_page_url=data.get("previous_page_url"),
-        target_page_url=data.get("target_page_url"),
-        user_ip=request.remote_addr,
-        user_agent=request.headers.get("User-Agent")
-    )
     
     return jsonify({"message": "event tracked"})
 
